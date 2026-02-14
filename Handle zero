@@ -1,0 +1,11 @@
+#division zero
+def divide(a, b):
+    try:
+        result = a / b
+        return result
+    except ZeroDivisionError:
+        return "Error: Division by zero is not allowed."
+# Example usage
+num1 = 10
+num2 = 0
+print(divide(num1, num2))

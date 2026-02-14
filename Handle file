@@ -1,0 +1,13 @@
+#handle file
+def read_file(filename):
+    with open(filename, 'r') as f:
+        data = f.read()
+    return data
+def write_file(filename, data):
+    with open(filename, 'w') as f:
+        f.write(data)
+# Example usage
+filename = 'example.txt'
+data = "Hello, this is a sample file."
+write_file(filename, data)
+print(read_file(filename))

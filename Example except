@@ -1,0 +1,15 @@
+#Example except
+def validate_age(age):
+    if age < 0:
+        raise ValueError("Age cannot be negative.")
+    elif age > 18:
+        raise ValueError("You must be at least 18 years old.")
+    else:
+        return "Age is valid."
+# Example usage
+try:
+    age_input = int(input("Enter your age: "))
+    print(validate_age(age_input))
+except ValueError as e:
+    print(f"Error: {e}")
+    
